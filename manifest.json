@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "PromptDock",
+  "version": "2.2.0",
+  "description": "ChatGPT 与 Gemini 网页端的本地提示词工作台。",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.notion.com/*"],
+  "background": { "service_worker": "src/background.ts", "type": "module" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["src/content.tsx"],
+      "run_at": "document_idle"
+    }
+  ]
+}

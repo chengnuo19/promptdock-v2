@@ -1,0 +1,112 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #252b2f;
+  background: #f7f7f6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f7f6;
+}
+
+body.harness-dark {
+  color: #f1f3f2;
+  background: #202426;
+}
+
+.harness-page {
+  min-height: 100vh;
+  padding: 20px 24px 120px;
+}
+
+.harness-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.harness-header button,
+.harness-composer button {
+  border: 1px solid #aeb9bf;
+  border-radius: 10px;
+  background: #fff;
+  color: #253039;
+  min-height: 36px;
+  padding: 7px 12px;
+}
+
+.harness-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 64px auto;
+  max-width: 720px;
+}
+
+.harness-chat article {
+  align-self: flex-end;
+  max-width: 75%;
+}
+
+.harness-chat article.assistant {
+  align-self: flex-start;
+}
+
+.harness-chat span {
+  color: #60717b;
+  font-size: 12px;
+}
+
+.harness-chat p {
+  border: 1px solid #d5dcdf;
+  border-radius: 14px;
+  background: #fff;
+  margin: 4px 0 0;
+  padding: 12px 14px;
+}
+
+.harness-composer {
+  align-items: flex-end;
+  background: #fff;
+  border: 1px solid #c9d3d8;
+  border-radius: 16px;
+  bottom: 24px;
+  display: flex;
+  gap: 10px;
+  left: 50%;
+  max-width: min(720px, calc(100vw - 120px));
+  padding: 10px;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.harness-composer textarea {
+  border: 0;
+  flex: 1;
+  font: inherit;
+  min-height: 48px;
+  outline: 0;
+  padding: 8px;
+  resize: vertical;
+}
+
+.harness-dark .harness-chat p,
+.harness-dark .harness-composer,
+.harness-dark .harness-header button,
+.harness-dark .harness-composer button {
+  background: #2a3032;
+  border-color: #4a565c;
+  color: #f1f3f2;
+}
+
+.harness-dark .harness-composer textarea {
+  background: #2a3032;
+  color: #f1f3f2;
+}
+
+.harness-dark .harness-chat span {
+  color: #b4bec3;
+}

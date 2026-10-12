@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.superpowers/
+*.log
+
+.playwright-cli/
+output/
+.env
+.env.*
+*.key
+*.pem
+
+.claude/

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>PromptDock History Preview Harness</title>
+  </head>
+  <body>
+    <aside aria-label="模拟 ChatGPT 侧栏">ChatGPT</aside>
+    <main>
+      <h1>ChatGPT 右边缘提问列表</h1>
+      <p>将鼠标移到页面最右侧，待条纹出现后悬停；点击条目可跳转到对应提问。前两条模拟“尚未加载”的旧消息。</p>
+      <div id="thread"></div>
+    </main>
+    <button class="right-edge-guide" type="button" aria-label="模拟页面右边缘"></button>
+    <script type="module" src="/tests/browser/historyPreviewHarness.ts"></script>
+  </body>
+</html>
